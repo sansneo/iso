@@ -1,0 +1,6 @@
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=50
+GRUB_DISTRIBUTOR="Void Linux"
+GRUB_CMDLINE_LINUX_DEFAULT="nowatchdog loglevel=4 slab_nomerge mitigations=auto"
+GRUB_DISABLE_OS_PROBER=false
+GRUB_DISABLE_RECOVERY=true

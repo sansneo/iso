@@ -1,0 +1,8 @@
+.env*
+!.env.example
+*.iso
+*.log
+tags*
+.DS_Store/
+.idea/
+.vscode/
