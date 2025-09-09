@@ -246,6 +246,7 @@ xbps-install -Syu intel-video-accel intel-media-driver vulkan-intel
 ```sh
 git clone https://github.com/sansneo/iso  
 cd iso
+git submodule update --init --remote
 ```
 2. Generate the builds
 ```
