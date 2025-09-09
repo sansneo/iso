@@ -36,7 +36,8 @@ The Xorg build adds:
 * Audio with pulseaudio.
 * Bluetooth with bluez.
 
-> [!TIP] You can install whatever you need on top of a build or even fork to make your own!  
+> [!TIP]
+> You can install whatever you need on top of a build or even fork to make your own!  
 > Want to get NeoVim after installing the minimal build? Then just go ahead and `xbps-install neovim`.
 
 ## Let's get into it
@@ -197,12 +198,12 @@ These are all beloved and maintained editors[^5]
 * Comprehensive view of EVERYTHING that's been added to each build?  
 Read `build.sh`, it's super easy!  
 * How do I dive even deeper once I get comfy and master all the packages I need?  
-First off, impressive! I am far from that(probably), how about learning an instruction set and getting acquainted with the Linux syscall table next?
+First off, impressive! I am far from that(probably), how about learning an instruction set and getting acquainted with the Linux syscall table next?  
 Experienced C programmer and system internals type of guy? Why not try learning about the cloud with Go or learning functional programming with a language like Elixir?  
 The cloud is the first thing that came to mind because that's what I am doing right now, it's awesome, AWS a great place to start and then maybe Azure or Tencent.  
 
 > [!NOTE]
-> Check out the bookmarks in my [dotfiles](https://github.com/sansneo/dotfiles) and if you are actively looking for resources like this you are probably a crazy knowledgeable person and a rich Developer, Engineer, Data Scientist, Cloud Architect or something like a big CEO/CTO.   
+> Check out the bookmarks in my [dotfiles](https://github.com/sansneo/dotfiles) and if you are actively looking for resources like this you are probably a crazy knowledgeable person and a rich Developer, Engineer, Data Scientist, Cloud Architect or a big CEO/CTO.   
 > Pass your exams, get certified, get employed, and build things if you aren't, also workout and take care of yourself, it's really hot when someone nerdy is also super fit and attractive.  
 > Life can be awesome and self-improvement is great!  
 
@@ -251,7 +252,7 @@ cd iso
 sh build.sh
 ```
 
-> [!WARN]
+> [!WARNING]
 > Should be done in a Void Linux live or installation with `liblz4`, `xz` and `qemu-user-static` available.
 
 ### How does it work?
