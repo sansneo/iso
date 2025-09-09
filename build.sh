@@ -126,7 +126,7 @@ if [ "$(id -u)" -ne 0 ]; then echo "Run as root!"; exit 1; fi
 cd void-mklive/
 
 # Minimal
-./mkiso.sh -a x86_64 -b base-system \
+./mkiso.sh -a x86_64 -b base \
     -r "https://repo-fastly.voidlinux.org/current" \
     -r "https://repo-fastly.voidlinux.org/current/nonfree" \
     -r "https://repo-fastly.voidlinux.org/current/multilib" \
@@ -139,7 +139,7 @@ cd void-mklive/
     -C "vconsole.keymap=us" 
 
 # Xorg
-./mkiso.sh -a x86_64 -b base-system \
+./mkiso.sh -a x86_64 -b base \
     -r "https://repo-fastly.voidlinux.org/current" \
     -r "https://repo-fastly.voidlinux.org/current/nonfree" \
     -r "https://repo-fastly.voidlinux.org/current/multilib" \
