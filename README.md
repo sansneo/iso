@@ -32,7 +32,7 @@ The minimal build adds:
 
 The Xorg build adds:
 * Packages for a Xorg minimal installation with a selection of utilities such as xclip and xrandr.
-* The Noto fonts(including Chinese, Japanese, Korean and Emojis) and a selection of popular, yet distinguishable fonts.
+* The Noto fonts(including Emojis) and a selection of popular, yet distinguishable fonts.
 * Audio with pulseaudio.
 * Bluetooth with bluez.
 
@@ -42,7 +42,7 @@ The Xorg build adds:
 
 ## Let's get into it
 This index excludes purely drivers packages with no practical utility for the user.  
-You want to see everything `xbps-query -l` after installing or check out `build.sh`  
+You want to see everything `xbps-query -l` after installing or check out `make.sh`  
 * linux and kmod: kernel and modules
 * dracut: generates initramfs
 * grub: bootloader
@@ -196,7 +196,7 @@ These are all beloved and maintained editors[^5]
 
 ### Frequently asked questions
 * Comprehensive view of EVERYTHING that's been added to each build?  
-Read `build.sh`, it's super easy!  
+Read `make.sh`, it's super easy!  
 * How do I dive even deeper once I get comfy and master all the packages I need?  
 First off, impressive! I am far from that(probably), how about learning an instruction set and getting acquainted with the Linux syscall table next?  
 Experienced C programmer and system internals type of guy? Why not try learning about the cloud with Go or learning functional programming with a language like Elixir?  
@@ -229,7 +229,7 @@ xbps-install -Syu intel-ucode
 # For AMD CPUs
 xbps-install -Syu amd-ucode
 ```
-### GEt the graphical drivers for your GPU
+### Get the graphical drivers for your GPU
 ```sh
 # For AMD GPUs
 xbps-install -Syu mesa-vulkan-radeon radeon-ucode xf86-video-amdgpu xf86-video-ati
@@ -240,6 +240,10 @@ xbps-install -Syu intel-video-accel intel-media-driver vulkan-intel
 ```
 > [!NOTE]
 > Some of these might already be installed, but better safe then sorry!
+### Get the Chinese, Japanese and Korean fonts if you need them
+```
+xbps-install -Syu noto-fonts-cjk
+```
 
 ## Building
 1. Clone the repository
@@ -250,7 +254,7 @@ git submodule update --init --remote
 ```
 2. Generate the builds
 ```
-sh build.sh
+sh make.sh
 ```
 
 > [!WARNING]

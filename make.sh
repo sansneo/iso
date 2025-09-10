@@ -74,7 +74,6 @@ dev=$(clean "$dev")
 
 # Fonts
 fonts="
-noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-ttf
 noto-fonts-ttf-variable
@@ -130,7 +129,7 @@ cd void-mklive/
     -r "https://repo-fastly.voidlinux.org/current" \
     -r "https://repo-fastly.voidlinux.org/current/nonfree" \
     -r "https://repo-fastly.voidlinux.org/current/multilib" \
-    -- -k "us" -T "Void Linux" -o ../builds/minimal.iso \
+    -- -k "us" -T "Void Linux" -o ../build/minimal.iso \
     -p "void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree" \
     -p "$drivers $services $utilities $cloud $dev noto-fonts-ttf" \
     -e /bin/bash \
@@ -143,14 +142,14 @@ cd void-mklive/
     -r "https://repo-fastly.voidlinux.org/current" \
     -r "https://repo-fastly.voidlinux.org/current/nonfree" \
     -r "https://repo-fastly.voidlinux.org/current/multilib" \
-    -- -k "us" -T "Void Linux" -o ../builds/xorg.iso \
+    -- -k "us" -T "Void Linux" -o ../build/xorg.iso \
     -p "void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree" \
-    -p "$drivers $services $utilities $cloud $dev $fonts" \
+    -p "$drivers $services $utilities $cloud $dev" \
+    -p "$fonts $xorg $audio $bluetooth" \
     -e /bin/bash \
     -I ../custom \
     -S "dhcpcd tlp dbus elogind" \
     -C "vconsole.keymap=us" 
-
 
 # Done!
 cd ..
