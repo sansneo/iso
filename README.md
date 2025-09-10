@@ -247,7 +247,7 @@ xbps-install -Syu noto-fonts-cjk
 
 ## Building
 1. Clone the repository
-```sh
+```
 git clone https://github.com/sansneo/iso  
 cd iso
 git submodule update --init --remote
